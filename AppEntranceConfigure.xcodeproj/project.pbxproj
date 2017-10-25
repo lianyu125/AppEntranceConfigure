@@ -10,7 +10,6 @@
 		BF020CB81FA0E3E500ECA679 /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2FC7821F996F5400519DBA /* AppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF020CB91FA0E3EF00ECA679 /* AppDelegate.m in Headers */ = {isa = PBXBuildFile; fileRef = BF2FC7831F996F5400519DBA /* AppDelegate.m */; settings = {ATTRIBUTES = (Private, ); }; };
 		BF3D1A951FA093E80088F0D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2FC7831F996F5400519DBA /* AppDelegate.m */; };
-		BF3D1A971FA096970088F0D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2FC7911F996F5500519DBA /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -144,7 +143,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF3D1A971FA096970088F0D9 /* main.m in Sources */,
 				BF3D1A951FA093E80088F0D9 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
