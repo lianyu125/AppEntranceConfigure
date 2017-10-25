@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BF020CCA1FA15B3600ECA679 /* moduleMap.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = moduleMap.plist; sourceTree = "<group>"; };
 		BF2FC7701F996F2800519DBA /* libAppEntranceConfigure.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAppEntranceConfigure.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2FC7821F996F5400519DBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF2FC7831F996F5400519DBA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 			children = (
 				BF2FC7821F996F5400519DBA /* AppDelegate.h */,
 				BF2FC7831F996F5400519DBA /* AppDelegate.m */,
+				BF020CCA1FA15B3600ECA679 /* moduleMap.plist */,
 				BF2FC78B1F996F5500519DBA /* Assets.xcassets */,
 				BF2FC7901F996F5500519DBA /* Info.plist */,
 				BF2FC7911F996F5500519DBA /* main.m */,
