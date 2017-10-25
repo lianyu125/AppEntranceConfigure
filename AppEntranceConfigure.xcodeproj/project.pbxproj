@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF020CB81FA0E3E500ECA679 /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2FC7821F996F5400519DBA /* AppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF020CB91FA0E3EF00ECA679 /* AppDelegate.m in Headers */ = {isa = PBXBuildFile; fileRef = BF2FC7831F996F5400519DBA /* AppDelegate.m */; settings = {ATTRIBUTES = (Private, ); }; };
 		BF3D1A951FA093E80088F0D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2FC7831F996F5400519DBA /* AppDelegate.m */; };
-		BF3D1A961FA093FE0088F0D9 /* AppDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BF2FC7821F996F5400519DBA /* AppDelegate.h */; };
 		BF3D1A971FA096970088F0D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2FC7911F996F5500519DBA /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -19,7 +20,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				BF3D1A961FA093FE0088F0D9 /* AppDelegate.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +75,18 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		BF020CB71FA0E36600ECA679 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF020CB81FA0E3E500ECA679 /* AppDelegate.h in Headers */,
+				BF020CB91FA0E3EF00ECA679 /* AppDelegate.m in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		BF2FC76F1F996F2800519DBA /* AppEntranceConfigure */ = {
 			isa = PBXNativeTarget;
@@ -83,6 +95,7 @@
 				BF2FC76C1F996F2800519DBA /* Sources */,
 				BF2FC76D1F996F2800519DBA /* Frameworks */,
 				BF2FC76E1F996F2800519DBA /* CopyFiles */,
+				BF020CB71FA0E36600ECA679 /* Headers */,
 			);
 			buildRules = (
 			);
