@@ -111,7 +111,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-   s.resources = "AppEntranceConfigure/moduleMap.plist"
+   s.resource = "AppEntranceConfigure/moduleMap.plist"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
