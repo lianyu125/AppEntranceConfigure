@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AppEntranceConfigure"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A Framework of AppEntranceConfigure."
 
   # This description is used to generate tags and improve search results.
@@ -97,9 +97,9 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "AppEntranceConfigure", "AppEntranceConfigure/**/*.{h,m}"
-  s.exclude_files = "AppEntranceConfigure/Exclude"
+  s.exclude_files = "AppEntranceConfigure/main.m"
 
-  # s.public_header_files = "AppEntranceConfigure/**/*.h"
+  s.public_header_files = "AppEntranceConfigure/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -109,9 +109,7 @@ Pod::Spec.new do |s|
   #  You can preserve files from being cleaned, please don't preserve
   #  non-essential files like tests, examples and documentation.
   #
-
-  # s.resource  = "icon.png"
-   s.resource = "AppEntranceConfigure/tmap.plist"
+  s.resource  = "AppEntranceConfigure/moduleMap.plist", "AppEntranceConfigure/info.plist"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -135,7 +133,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
