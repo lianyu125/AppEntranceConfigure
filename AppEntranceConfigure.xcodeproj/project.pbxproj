@@ -7,17 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF020CCB1FA1616D00ECA679 /* moduleMap.plist in Copy Files */ = {isa = PBXBuildFile; fileRef = BF020CCA1FA15B3600ECA679 /* moduleMap.plist */; };
 		BF3D1A951FA093E80088F0D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2FC7831F996F5400519DBA /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		BF2FC76E1F996F2800519DBA /* CopyFiles */ = {
+		BF2FC76E1F996F2800519DBA /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
+			dstSubfolderSpec = 7;
 			files = (
+				BF020CCB1FA1616D00ECA679 /* moduleMap.plist in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -81,7 +84,7 @@
 			buildPhases = (
 				BF2FC76C1F996F2800519DBA /* Sources */,
 				BF2FC76D1F996F2800519DBA /* Frameworks */,
-				BF2FC76E1F996F2800519DBA /* CopyFiles */,
+				BF2FC76E1F996F2800519DBA /* Copy Files */,
 				BF020CBC1FA0E9F100ECA679 /* Copy Pods Resources */,
 			);
 			buildRules = (
