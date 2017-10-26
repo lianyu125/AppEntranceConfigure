@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BF020CCB1FA1616D00ECA679 /* moduleMap.plist in Copy Files */ = {isa = PBXBuildFile; fileRef = BF020CCA1FA15B3600ECA679 /* moduleMap.plist */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		BF020CD71FA1637E00ECA679 /* moduleMap.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF020CCA1FA15B3600ECA679 /* moduleMap.plist */; };
+		BF020CD81FA1685400ECA679 /* moduleMap.plist in Sources */ = {isa = PBXBuildFile; fileRef = BF020CCA1FA15B3600ECA679 /* moduleMap.plist */; };
 		BF3D1A951FA093E80088F0D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2FC7831F996F5400519DBA /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
@@ -212,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF020CD81FA1685400ECA679 /* moduleMap.plist in Sources */,
 				BF3D1A951FA093E80088F0D9 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
