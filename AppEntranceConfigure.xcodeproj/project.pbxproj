@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF020CCB1FA1616D00ECA679 /* moduleMap.plist in Copy Files */ = {isa = PBXBuildFile; fileRef = BF020CCA1FA15B3600ECA679 /* moduleMap.plist */; };
+		BF020CCB1FA1616D00ECA679 /* moduleMap.plist in Copy Files */ = {isa = PBXBuildFile; fileRef = BF020CCA1FA15B3600ECA679 /* moduleMap.plist */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BF020CD71FA1637E00ECA679 /* moduleMap.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF020CCA1FA15B3600ECA679 /* moduleMap.plist */; };
 		BF3D1A951FA093E80088F0D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2FC7831F996F5400519DBA /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		BF020CCA1FA15B3600ECA679 /* moduleMap.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = moduleMap.plist; sourceTree = "<group>"; };
+		BF020CD11FA1637000ECA679 /* AppEntranceConfigureBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppEntranceConfigureBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF020CD31FA1637000ECA679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF2FC7701F996F2800519DBA /* libAppEntranceConfigure.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAppEntranceConfigure.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2FC7821F996F5400519DBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF2FC7831F996F5400519DBA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,6 +39,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BF020CCE1FA1637000ECA679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BF2FC76D1F996F2800519DBA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -46,10 +56,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF020CD21FA1637000ECA679 /* AppEntranceConfigureBundle */ = {
+			isa = PBXGroup;
+			children = (
+				BF020CD31FA1637000ECA679 /* Info.plist */,
+			);
+			path = AppEntranceConfigureBundle;
+			sourceTree = "<group>";
+		};
 		BF2FC7671F996F2800519DBA = {
 			isa = PBXGroup;
 			children = (
 				BF2FC7721F996F2800519DBA /* AppEntranceConfigure */,
+				BF020CD21FA1637000ECA679 /* AppEntranceConfigureBundle */,
 				BF2FC7711F996F2800519DBA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				BF2FC7701F996F2800519DBA /* libAppEntranceConfigure.a */,
+				BF020CD11FA1637000ECA679 /* AppEntranceConfigureBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +98,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BF020CD01FA1637000ECA679 /* AppEntranceConfigureBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF020CD41FA1637000ECA679 /* Build configuration list for PBXNativeTarget "AppEntranceConfigureBundle" */;
+			buildPhases = (
+				BF020CCD1FA1637000ECA679 /* Sources */,
+				BF020CCE1FA1637000ECA679 /* Frameworks */,
+				BF020CCF1FA1637000ECA679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppEntranceConfigureBundle;
+			productName = AppEntranceConfigureBundle;
+			productReference = BF020CD11FA1637000ECA679 /* AppEntranceConfigureBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		BF2FC76F1F996F2800519DBA /* AppEntranceConfigure */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF2FC7791F996F2800519DBA /* Build configuration list for PBXNativeTarget "AppEntranceConfigure" */;
@@ -105,6 +142,10 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = ZLY;
 				TargetAttributes = {
+					BF020CD01FA1637000ECA679 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
 					BF2FC76F1F996F2800519DBA = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -125,9 +166,21 @@
 			projectRoot = "";
 			targets = (
 				BF2FC76F1F996F2800519DBA /* AppEntranceConfigure */,
+				BF020CD01FA1637000ECA679 /* AppEntranceConfigureBundle */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF020CCF1FA1637000ECA679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF020CD71FA1637E00ECA679 /* moduleMap.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		BF020CBC1FA0E9F100ECA679 /* Copy Pods Resources */ = {
@@ -148,6 +201,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BF020CCD1FA1637000ECA679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BF2FC76C1F996F2800519DBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -159,6 +219,42 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		BF020CD51FA1637000ECA679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = GWS99ET65G;
+				INFOPLIST_FILE = AppEntranceConfigureBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devzou.AppEntranceConfigureBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		BF020CD61FA1637000ECA679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = GWS99ET65G;
+				INFOPLIST_FILE = AppEntranceConfigureBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devzou.AppEntranceConfigureBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		BF2FC7771F996F2800519DBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -292,6 +388,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BF020CD41FA1637000ECA679 /* Build configuration list for PBXNativeTarget "AppEntranceConfigureBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF020CD51FA1637000ECA679 /* Debug */,
+				BF020CD61FA1637000ECA679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BF2FC76B1F996F2800519DBA /* Build configuration list for PBXProject "AppEntranceConfigure" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
