@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF020CCB1FA1616D00ECA679 /* moduleMap.plist in Copy Files */ = {isa = PBXBuildFile; fileRef = BF020CCA1FA15B3600ECA679 /* moduleMap.plist */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		BF020CD71FA1637E00ECA679 /* moduleMap.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF020CCA1FA15B3600ECA679 /* moduleMap.plist */; };
-		BF020CD81FA1685400ECA679 /* moduleMap.plist in Sources */ = {isa = PBXBuildFile; fileRef = BF020CCA1FA15B3600ECA679 /* moduleMap.plist */; };
 		BF3D1A951FA093E80088F0D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2FC7831F996F5400519DBA /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
@@ -20,7 +17,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 7;
 			files = (
-				BF020CCB1FA1616D00ECA679 /* moduleMap.plist in Copy Files */,
 			);
 			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -28,9 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BF020CCA1FA15B3600ECA679 /* moduleMap.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = moduleMap.plist; sourceTree = "<group>"; };
 		BF020CD11FA1637000ECA679 /* AppEntranceConfigureBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppEntranceConfigureBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF020CD31FA1637000ECA679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF020CD91FA1889400ECA679 /* moduleMap.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = moduleMap.plist; sourceTree = "<group>"; };
+		BF020CDB1FA19CF300ECA679 /* tmap.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = tmap.plist; sourceTree = "<group>"; };
 		BF2FC7701F996F2800519DBA /* libAppEntranceConfigure.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAppEntranceConfigure.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2FC7821F996F5400519DBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF2FC7831F996F5400519DBA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -88,7 +85,8 @@
 			children = (
 				BF2FC7821F996F5400519DBA /* AppDelegate.h */,
 				BF2FC7831F996F5400519DBA /* AppDelegate.m */,
-				BF020CCA1FA15B3600ECA679 /* moduleMap.plist */,
+				BF020CD91FA1889400ECA679 /* moduleMap.plist */,
+				BF020CDB1FA19CF300ECA679 /* tmap.plist */,
 				BF2FC78B1F996F5500519DBA /* Assets.xcassets */,
 				BF2FC7901F996F5500519DBA /* Info.plist */,
 				BF2FC7911F996F5500519DBA /* main.m */,
@@ -177,7 +175,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF020CD71FA1637E00ECA679 /* moduleMap.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +190,6 @@
 			);
 			name = "Copy Pods Resources";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/moduleMap.plist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -213,7 +209,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF020CD81FA1685400ECA679 /* moduleMap.plist in Sources */,
 				BF3D1A951FA093E80088F0D9 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +361,8 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GWS99ET65G;
+				EXCLUDED_SOURCE_FILE_NAMES = "";
+				INCLUDED_SOURCE_FILE_NAMES = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PODS_ROOT = "$(SRCROOT)/Pods";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -379,6 +376,8 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GWS99ET65G;
+				EXCLUDED_SOURCE_FILE_NAMES = "";
+				INCLUDED_SOURCE_FILE_NAMES = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PODS_ROOT = "$(SRCROOT)/Pods";
 				PRODUCT_NAME = "$(TARGET_NAME)";
